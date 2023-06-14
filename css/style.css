@@ -1,0 +1,493 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+/*    background: linear-gradient(72deg, #3debb0 1%, #202d59 99%); /*Essa parte pode tirar, coloquei só para deixar bem visível tudo*/
+    user-select: none;
+    overflow-x: hidden;
+}
+
+/*AQUI COMEÇA O CARROSSEL :)*/
+/* .content {
+    height: 83vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #222222;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: #fff;
+    opacity: 65%;
+}
+
+input[name="slide"] {
+    display: none;
+  }
+
+.slides {
+    display: flex;
+    object-fit: cover;
+} */
+
+/* .slide {
+    width: 33%;
+    height: 100%;
+    transition: .6s;
+    object-fit: cover;
+} */
+
+/* .slide img {
+
+    object-fit: cover;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -33%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -66%;
+} */
+/*AQUI TERMINA O CARROSSEL :)*/
+
+/*GIF*/
+/* .gif{
+    object-fit: cover;
+} */
+/*fim GIF*/
+
+/*AQUI COMEÇA A NAV*/
+nav * {
+    z-index: 10;
+    margin-top: 0;
+}
+
+.logo-item {
+    position: absolute;
+    left: 5vh;
+    align-items: center;
+}
+  
+.logo{
+height: 5vh;
+width: 5vh;
+}
+
+ul {
+    background-color:#222222;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    box-shadow: 0 0 25px 0 black;
+    }
+
+ul * {
+    display: inline;
+    font-size: 3vh;
+    }
+
+ul li {
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+    }
+
+ul li a {
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    }
+
+ul li a:hover {
+    color:#BE1E2D;
+}
+
+
+/*AQUI TERMINA A NAV*/
+
+/*AQUI COMEÇA OS TEXTOS*/
+.texto {
+    margin: 10vh 0 0 0;
+    float: left
+}
+strong {
+    font-size: 27px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.fotos {
+    float: left;
+    width: 100%;
+}
+
+.fotinhas {
+    margin-left: 10%;    
+}
+
+.fotos img {
+    width: 450px;
+}
+
+figcaption{
+    font-size: 17px;
+}
+
+.infografico {
+    text-align: center;
+    width: 100%;
+}
+
+.infografico img {
+    width: 150vh;
+}
+
+#loginha:hover {
+    cursor: pointer;
+}
+
+.artistas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exposicao1 {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    width: 26%;
+    cursor: pointer;
+    padding: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.exposicao1 img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.obras {
+    float: left;
+}
+
+.textinho {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #fff;
+}
+
+.video {
+    text-align: center;
+    width: 100%;
+}
+
+.textodovideo {
+    text-align: center;
+}
+
+.legenda {
+    visibility: hidden;
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+}
+
+.legenda h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.exposicao1:hover .legenda {
+    visibility: visible;
+}
+
+.exposicao1:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+}
+
+.exposicao2 {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    width: 26%;
+    cursor: pointer;
+    padding: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.exposicao2 img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.exposicao2:hover .legenda {
+    visibility: visible;
+}
+
+.exposicao2:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+}
+
+.exposicao3 {
+    position: relative;
+    float: left;
+    margin-left: 10%;
+    width: 26%;
+    cursor: pointer;
+    padding: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.exposicao3 img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.exposicao3:hover .legenda {
+    visibility: visible;
+}
+
+.exposicao3:hover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+}
+
+.tudo {
+    display: flex;
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 150px;
+    height: 350px;
+    width: 100%;
+    background-color: #333;
+    color: #efefef;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.col-2 {
+    flex-grow: 0;
+    width: 40vw;
+    height: 40vh;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 12%;
+}
+
+.col-3 {
+    margin-top: 18px;
+
+}
+
+.arrobas {
+    color: #db5461;
+    cursor: pointer;
+}
+
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.col-1 span:hover{
+    color: #db5461;
+}
+
+form input {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 2px solid;
+    width: 300px;
+    height: 30px;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label{
+    float: left;
+}
+
+.gif {
+    width: 101%;
+}
+
+.figure {
+    text-align: center;
+    width: 100%;
+    border: black solid 2px;
+}
+
+#figure1 {
+    margin-left: 14%;
+}
+
+.figuref {
+    width: 150vh;
+}
+
+/* .input {
+    display: flex;
+    background-color: #5e5e5e;
+    color: black;
+    width: 400px;
+    height: 30px;
+    align-items: center;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 40px;
+} */
+
+/* form span {
+    color: #5e5e5ee0;
+    font-size: smaller;
+    border-radius: 4px;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.804);
+    align-items: center;
+} */
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  #ffffff;
+    color: #222222;
+}
+
+.social {
+    margin-top: 30px;
+    height: 45px;
+}
+
+.social i {
+    font-size: 25px;
+    margin: 13px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#facebook:hover {
+    color: #4267B2;
+    font-size: 25px;
+}
+
+#twitter:hover{
+    color: #1DA1F2;
+    font-size: 25px;
+}
+
+#instagram:hover {
+    color: #C13584;
+    font-size: 25px;
+}
+
+#linkedin:hover {
+    color: #4267B2;
+    font-size: 25px;
+}
+
+
+/*AQUI TERMINA OS TEXTOS*/
+/*devs*/
+
+#titulo{
+    margin-top: 15vh;
+}
+.pessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.pessoa img {
+    width: 300px;
+    height: 300px;
+}
+.coluna {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.moldura{
+    border: solid 10px black;
+    padding: 30px 30px 5px 30px;
+}
